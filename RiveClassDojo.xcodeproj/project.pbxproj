@@ -8,18 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		512CAE042C077AB500BDA04F /* RiveClassDojoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512CAE032C077AB500BDA04F /* RiveClassDojoApp.swift */; };
-		512CAE062C077AB500BDA04F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512CAE052C077AB500BDA04F /* ContentView.swift */; };
 		512CAE082C077AB600BDA04F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512CAE072C077AB600BDA04F /* Assets.xcassets */; };
 		512CAE0C2C077AB600BDA04F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512CAE0B2C077AB600BDA04F /* Preview Assets.xcassets */; };
+		512CAE142C077B0100BDA04F /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 512CAE132C077B0100BDA04F /* RiveRuntime */; };
+		512CAE162C077B1600BDA04F /* classdojo.riv in Resources */ = {isa = PBXBuildFile; fileRef = 512CAE152C077B1600BDA04F /* classdojo.riv */; };
+		512CAE182C077B6100BDA04F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512CAE172C077B6100BDA04F /* SceneDelegate.swift */; };
+		512CAE1A2C077B7C00BDA04F /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512CAE192C077B7C00BDA04F /* SplashViewController.swift */; };
+		512CAE1D2C077BE200BDA04F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 512CAE1C2C077BE200BDA04F /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		512CAE002C077AB500BDA04F /* RiveClassDojo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RiveClassDojo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		512CAE032C077AB500BDA04F /* RiveClassDojoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiveClassDojoApp.swift; sourceTree = "<group>"; };
-		512CAE052C077AB500BDA04F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		512CAE072C077AB600BDA04F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		512CAE092C077AB600BDA04F /* RiveClassDojo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RiveClassDojo.entitlements; sourceTree = "<group>"; };
 		512CAE0B2C077AB600BDA04F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		512CAE152C077B1600BDA04F /* classdojo.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = classdojo.riv; sourceTree = "<group>"; };
+		512CAE172C077B6100BDA04F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		512CAE192C077B7C00BDA04F /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		512CAE1E2C077C7D00BDA04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512CAE142C077B0100BDA04F /* RiveRuntime in Frameworks */,
+				512CAE1D2C077BE200BDA04F /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,11 +61,14 @@
 		512CAE022C077AB500BDA04F /* RiveClassDojo */ = {
 			isa = PBXGroup;
 			children = (
-				512CAE032C077AB500BDA04F /* RiveClassDojoApp.swift */,
-				512CAE052C077AB500BDA04F /* ContentView.swift */,
+				512CAE1E2C077C7D00BDA04F /* Info.plist */,
 				512CAE072C077AB600BDA04F /* Assets.xcassets */,
-				512CAE092C077AB600BDA04F /* RiveClassDojo.entitlements */,
+				512CAE152C077B1600BDA04F /* classdojo.riv */,
 				512CAE0A2C077AB600BDA04F /* Preview Content */,
+				512CAE092C077AB600BDA04F /* RiveClassDojo.entitlements */,
+				512CAE032C077AB500BDA04F /* RiveClassDojoApp.swift */,
+				512CAE172C077B6100BDA04F /* SceneDelegate.swift */,
+				512CAE192C077B7C00BDA04F /* SplashViewController.swift */,
 			);
 			path = RiveClassDojo;
 			sourceTree = "<group>";
@@ -85,6 +97,10 @@
 			dependencies = (
 			);
 			name = RiveClassDojo;
+			packageProductDependencies = (
+				512CAE132C077B0100BDA04F /* RiveRuntime */,
+				512CAE1C2C077BE200BDA04F /* SnapKit */,
+			);
 			productName = RiveClassDojo;
 			productReference = 512CAE002C077AB500BDA04F /* RiveClassDojo.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +129,10 @@
 				Base,
 			);
 			mainGroup = 512CADF72C077AB500BDA04F;
+			packageReferences = (
+				512CAE122C077B0100BDA04F /* XCRemoteSwiftPackageReference "rive-ios" */,
+				512CAE1B2C077BE200BDA04F /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 512CAE012C077AB500BDA04F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				512CAE162C077B1600BDA04F /* classdojo.riv in Resources */,
 				512CAE0C2C077AB600BDA04F /* Preview Assets.xcassets in Resources */,
 				512CAE082C077AB600BDA04F /* Assets.xcassets in Resources */,
 			);
@@ -139,8 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				512CAE062C077AB500BDA04F /* ContentView.swift in Sources */,
 				512CAE042C077AB500BDA04F /* RiveClassDojoApp.swift in Sources */,
+				512CAE182C077B6100BDA04F /* SceneDelegate.swift in Sources */,
+				512CAE1A2C077B7C00BDA04F /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,8 +294,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RiveClassDojo/Preview Content\"";
 				DEVELOPMENT_TEAM = QW6T5Q39LV;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RiveClassDojo/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -282,8 +306,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -292,7 +316,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.classdojo.RiveClassDojo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -310,8 +336,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"RiveClassDojo/Preview Content\"";
 				DEVELOPMENT_TEAM = QW6T5Q39LV;
 				ENABLE_HARDENED_RUNTIME = YES;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RiveClassDojo/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -320,8 +348,8 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
@@ -330,7 +358,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.classdojo.RiveClassDojo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -359,6 +389,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		512CAE122C077B0100BDA04F /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.12.0;
+			};
+		};
+		512CAE1B2C077BE200BDA04F /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		512CAE132C077B0100BDA04F /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 512CAE122C077B0100BDA04F /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+		512CAE1C2C077BE200BDA04F /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 512CAE1B2C077BE200BDA04F /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 512CADF82C077AB500BDA04F /* Project object */;
 }
